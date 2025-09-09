@@ -2,8 +2,7 @@ RewriteEngine on
 
 #ROUTES
 
+
 RewriteRule ^(.*)$ index.php [L]
-
-
 
 #--------------------------------------------------------------
