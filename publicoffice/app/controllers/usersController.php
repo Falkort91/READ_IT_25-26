@@ -20,6 +20,7 @@ function loginAction(PDO $connection, array $data){
     
 
     if($user):
+        $_SESSION['user']=$user;
         header('Location:'.ADMIN_BASE_URL.'dashboard');
     else:
         header('Location: '.PUBLIC_BASE_URL.'users/login-form');
