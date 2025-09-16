@@ -8,7 +8,7 @@ function dashboardAction(PDO $connection){
     global $content,$title;
     $title='Dashboard';
     ob_start();
-    include '../app/views/templates/pages/dashboard.php';
+    include '../app/views/pages/dashboard.php';
     $content = ob_get_clean();
 
 };
