@@ -8,6 +8,10 @@ switch ($_GET['users']):
         UsersController\logoutAction();
         break;
 
+    case 'new':
+        UsersController\newAction();
+        break;
+        
     default:
         UsersController\indexAction($connection);
         break;

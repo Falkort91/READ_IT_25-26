@@ -1,6 +1,6 @@
 <div class="col-md-12">
       <div class="page-header">
-        <h1>LISTE DES POSTS</h1>
+        <h1><?php echo $title?></h1>
       </div>
 
       <table class="table table-bordered">
