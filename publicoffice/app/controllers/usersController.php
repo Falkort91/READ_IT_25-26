@@ -17,7 +17,6 @@ function loginAction(PDO $connection, array $data){
     include_once '../app/models/usersModel.php';
     $user= UsersModel\findOneByEmailAndPassword($connection, $data);
 
-    
 
     if($user):
         $_SESSION['user']=$user;

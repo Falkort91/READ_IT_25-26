@@ -18,6 +18,11 @@ RewriteRule ^users$ index.php?users=index [L]
 #PATTERN: ?users=new
 RewriteRule ^users/new$ index.php?users=new [L]
 
+#ROUTE: users.create
+#URL: users/create
+#PATTERN: ?users=create
+RewriteRule ^users/create$ index.php?users=create [L]
+
 
 
 #--------------------------------------------------------------

@@ -29,3 +29,9 @@ function newAction(){
     include '../app/views/users/new.php';
     $content = ob_get_clean();
 }
+
+function createAction(PDO $connection, array $data){
+    include_once '../app/models/usersModel.php';
+    $reponse = UsersModel\create($connection, $data);
+    header('Location: '. ADMIN_BASE_URL .'users');
+}
